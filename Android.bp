@@ -43,6 +43,7 @@ android_library {
         "elmyra-messages-java",
         "elmyra-sysui-shared",
         "monet",
+	"smartspace-proto-java",
         "StatixSystemUI-res",
         "SystemUI-core",
         "vendor.lineage.powershare-V1-java",
