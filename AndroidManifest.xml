@@ -41,6 +41,9 @@
         tools:replace="android:appComponentFactory"
         android:appComponentFactory=".SystemUIAppComponentFactory">
 
+        <provider android:name=".keyguard.KeyguardSliceProvider"
+            tools:node="remove" />
+
         <!-- Smart Pixels -->
         <service android:name="com.statix.android.systemui.smartpixels.SmartPixelsService"
             android:exported="true"
