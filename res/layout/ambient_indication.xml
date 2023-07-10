@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.statix.android.systemui.ambient.AmbientIndicationContainer
+<com.google.android.systemui.ambientmusic.AmbientIndicationContainer
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:systemui="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/ambient_indication_container"
+    android:id="@id/ambient_indication_container"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:forceHasOverlappingRendering="false"
     android:layout="@layout/ambient_indication_inner"
     android:layout_gravity="bottom"
-    systemui:layout_constraintBottom_toBottomOf="parent" />
+    android:layout_marginBottom="@dimen/ambient_indication_margin_bottom"
+    android:layout_marginEnd="41.0dip"
+    android:layout_marginStart="41.0dip" />
