@@ -17,6 +17,8 @@ import com.android.systemui.statusbar.QsFrameTranslateModule;
 
 import dagger.Subcomponent;
 
+import com.google.android.systemui.smartspace.KeyguardSmartspaceController;
+
 @SysUISingleton
 @Subcomponent(modules = {
         DependencyProvider.class,
@@ -39,5 +41,11 @@ public interface SysUIComponentStatix extends SysUIComponent {
      * Member injection into the supplied argument.
      */
     void inject(CustomizationProvider customizationProvider);
+
+    /**
+     * Creates a KeyguardSmartspaceController.
+     */
+    @SysUISingleton
+    KeyguardSmartspaceController createKeyguardSmartspaceController();
 
 }

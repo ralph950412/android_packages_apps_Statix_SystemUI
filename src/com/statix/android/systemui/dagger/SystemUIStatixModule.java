@@ -72,6 +72,8 @@ import com.android.systemui.statusbar.policy.SensorPrivacyControllerImpl;
 import com.android.systemui.theme.ThemeOverlayController;
 import com.android.systemui.volume.dagger.VolumeModule;
 
+import com.google.android.systemui.smartspace.dagger.SmartspaceModule;
+
 import com.statix.android.systemui.biometrics.FingerprintInteractiveToAuthProviderImpl;
 import com.statix.android.systemui.biometrics.FingerprintExtProvider;
 import com.statix.android.systemui.biometrics.StatixUdfpsTouchProvider;
@@ -99,6 +101,7 @@ import dagger.Provides;
         StatixPowerModule.class,
         StatixQSModule.class,
         VolumeModule.class,
+	SmartspaceModule.class,
         StatusBarEventsModule.class
 })
 public abstract class SystemUIStatixModule {
