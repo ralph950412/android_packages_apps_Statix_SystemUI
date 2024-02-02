@@ -40,9 +40,11 @@ android_library {
     ],
     static_libs: [
         "adaptivecharging",
+        "bcsmartspace-res",
         "elmyra-messages-java",
         "elmyra-sysui-shared",
         "monet",
+        "smartspace-google",
         "StatixSystemUI-res",
         "SystemUI-core",
         "vendor.lineage.powershare-V1-java",

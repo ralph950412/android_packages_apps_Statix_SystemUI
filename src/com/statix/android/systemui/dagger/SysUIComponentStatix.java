@@ -15,6 +15,9 @@ import com.android.systemui.shade.ShadeModule;
 import com.android.systemui.statusbar.NotificationInsetsModule;
 import com.android.systemui.statusbar.QsFrameTranslateModule;
 
+import com.statix.android.systemui.keyguard.KeyguardSliceProviderStatix;
+import com.statix.android.systemui.smartspace.KeyguardSmartspaceController;
+
 import dagger.Subcomponent;
 
 @SysUISingleton
@@ -39,4 +42,8 @@ public interface SysUIComponentStatix extends SysUIComponent {
 
     /** Member injection into the supplied argument. */
     void inject(CustomizationProvider customizationProvider);
+    void inject(KeyguardSliceProviderStatix keyguardSliceProviderStatix);
+
+    @SysUISingleton
+    KeyguardSmartspaceController createKeyguardSmartspaceController();
 }
