@@ -38,7 +38,7 @@ import com.android.systemui.statusbar.policy.BatteryController;
 
 import com.statix.android.systemui.ambient.AmbientIndicationContainer;
 
-import vendor.lineage.powershare.IPowerShare;
+import vendor.statix.powershare.IPowerShare;
 
 import java.util.NoSuchElementException;
 
@@ -59,7 +59,7 @@ public class PowerShareTile extends QSTileImpl<BooleanState>
     private static final int NOTIFICATION_ID = 273298;
 
     private static final String POWERSHARE_SERVICE_NAME =
-            "vendor.lineage.powershare.IPowerShare/default";
+            "vendor.statix.powershare.IPowerShare/default";
 
     @Inject
     public PowerShareTile(
