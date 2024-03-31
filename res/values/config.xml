@@ -14,6 +14,12 @@
         internet,bt,flashlight,dnd,alarm,airplane,controls,wallet,rotation,battery,cast,screenrecord,mictoggle,cameratoggle,location,hotspot,inversion,saver,dark,work,night,reverse,reduce_brightness,qr_code_scanner,onehanded,color_correction,dream,font_scaling,powershare,caffeine,glovemode,nfc,smartpixels,dataswitch
     </string>
 
+    <!-- ThemePicker package name for overlaying icons. -->
+    <string name="themepicker_overlayable_package" translatable="false">com.google.android.apps.wallpaper</string>
+
+    <!-- Package name for the app that implements the wallpaper picker. -->
+    <string name="config_wallpaperPickerPackage" translatable="false">com.google.android.apps.wallpaper</string>
+
     <!-- Do not translate. Defines the slots for the right-hand side icons.  That is to say, the
          icons in the status bar that are not notifications. -->
     <string-array name="config_statusBarIcons">
